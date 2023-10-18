@@ -1,5 +1,7 @@
 package net.dororo.tutorialmod;
 
+import net.dororo.tutorialmod.item.ModItemGroups;
+import net.dororo.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,8 +13,8 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
 
-
-		LOGGER.info("Hello Fabric world!");
 	}
 }
