@@ -1,7 +1,10 @@
 package net.dororo.tutorialmod.item;
 
 import net.dororo.tutorialmod.TutorialMod;
+import net.dororo.tutorialmod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.block.Block;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -18,6 +21,12 @@ public class ModItemGroups {
                         entries.add(ModItems.RUBY);
                         entries.add(ModItems.RAW_RUBY);
                         entries.add(Items.DIAMOND);
+                        entries.add(ModBlocks.RUBY_BLOCK);
+                        entries.add(Items.NETHERITE_BLOCK);
+                        entries.add(ModBlocks.RAW_RUWBY_BLOCK);
+
+
+
                     }).build());
     public  static void registerItemGroups(){
         TutorialMod.LOGGER.info("Registering Item Groups for " + TutorialMod.MOD_ID);

@@ -1,5 +1,6 @@
 package net.dororo.tutorialmod;
 
+import net.dororo.tutorialmod.block.ModBlocks;
 import net.dororo.tutorialmod.item.ModItemGroups;
 import net.dororo.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -15,6 +16,7 @@ public class TutorialMod implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
 	}
 }
